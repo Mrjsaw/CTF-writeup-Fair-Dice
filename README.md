@@ -98,11 +98,11 @@ What are you choosing? blue / yellow / red:
 
 So for the first round we are presented with a simple dice game, using probibility math and some python we can quickly develop the best strategy:
 
-| Computer | Player |
-| -------- | ------ |
-| blue | red |
-| yellow | blue |
-| red | blue |
+| Computer | Player | Odds |
+| -------- | ------ | ---- |
+| blue | red | 71.8% |
+| yellow | blue | 58.0% |
+| red | blue | 56.4% |
 
 # Round 2
 
@@ -118,11 +118,11 @@ You are two lucky, altering rules!
 
 In the second round the game and dice are the same except that each player rolls them twice, this changes the strategy:
 
-| Computer | Player |
-| -------- | ------ |
-| blue | yellow |
-| yellow | red |
-| red | blue |
+| Computer | Player | Odds |
+| -------- | ------ | ---- |
+| blue | yellow | 60.3% |
+| yellow | red | 58.5% |
+| red | blue | 52.6% |
 
 # Round 3
 
@@ -234,12 +234,12 @@ Ok?$
 
 This round adds a new green die and changes their values, the new strategy becomes:
 
-| Computer | Player |
-| -------- | ------ |
-| green | red |
-| blue | green |
-| yellow | blue |
-| red | yellow |
+| Computer | Player | Odds |
+| -------- | ------ | ----: |
+| green | red | 65.7% |
+| blue | green | 65.6% |
+| yellow | blue | 64.5% |
+| red | yellow | 66.8% |
 
 # Round 4
 
@@ -254,12 +254,12 @@ Time for fourth game!
 
 The final round adds the same rules as round 2 but with the extra die:
 
-| Computer | Player |
-| -------- | ------ |
-| green | yellow |
-| blue | red |
-| yellow | blue |
-| red | yellow |
+| Computer | Player | Odds |
+| -------- | ------ | ----: |
+| green | yellow | 82.0% |
+| blue | red | 75.6% |
+| yellow | blue | 42.0% |
+| red | yellow | 42.6% |
 
 And voila we are presented with our flag:
 ```console
