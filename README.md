@@ -1,6 +1,10 @@
 # CTF-writeup-fair-dice
 This is my solution to the fair-dice challenge hosted by ENISA Hackfest 2020 16 - 17 November 2020.
 
+# Challenge
+
+<img src="https://imgur.com/TX8qhIe.png"></img>
+
 # Round 1
 
 ```console
