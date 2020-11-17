@@ -87,7 +87,7 @@ Ok?
 I am chosing the red dice!
 What are you choosing? blue / yellow / red:
 ```
-
+# Round 1
 So for the first round we are presented with a simple dice game, using probibility math and some python we can quickly develop the best strategy:
 
 | Computer | Player |
@@ -95,3 +95,163 @@ So for the first round we are presented with a simple dice game, using probibili
 | blue | red |
 | yellow | blue |
 | red | blue |
+
+```console
+Time for second game!
+
+You are two lucky, altering rules!
+ - We are playing with the same dices.
+ - Each one of us selects 1 color of the playing dice.
+ - Each one of us throws 2 times the playing dice and add the numbers together.
+ - The biggest number wins.
+```
+
+# Round 2
+In the second round the game and dice are the same except that each player roles them twice, this changes the strategy:
+
+| Computer | Player |
+| -------- | ------ |
+| blue | yellow |
+| yellow | red |
+| red | blue |
+
+```console
+Time for third game!
+
+OMG! Again you? You are two lucky, altering rules!
+ - We are playing 4 new dices.
+ - Same rules as 1st game...
+ - You shall not pass!
+Let me show you the 4 dices we are going to play:
+
+Here is the blue dice:
+
+       xxxxxxx
+       x     x
+       x  3  x
+       x     x
+       xxxxxxx
+xxxxxxxxxxxxxxxxxxxxx
+x     xx     xx     x
+x  3  xx  3  xx  3  x
+x     xx     xx     x
+xxxxxxxxxxxxxxxxxxxxx
+       xxxxxxx
+       x     x
+       x  3  x
+       x     x
+       xxxxxxx
+       xxxxxxx
+       x     x
+       x  3  x
+       x     x
+       xxxxxxx
+Ok?$ 
+
+Here is the yellow dice:
+
+       xxxxxxx
+       x     x
+       x  6  x
+       x     x
+       xxxxxxx
+xxxxxxxxxxxxxxxxxxxxx
+x     xx     xx     x
+x  6  xx  2  xx  2  x
+x     xx     xx     x
+xxxxxxxxxxxxxxxxxxxxx
+       xxxxxxx
+       x     x
+       x  2  x
+       x     x
+       xxxxxxx
+       xxxxxxx
+       x     x
+       x  2  x
+       x     x
+       xxxxxxx
+Ok?$ 
+
+Here is the red dice:
+
+       xxxxxxx
+       x     x
+       x  5  x
+       x     x
+       xxxxxxx
+xxxxxxxxxxxxxxxxxxxxx
+x     xx     xx     x
+x  5  xx  5  xx  1  x
+x     xx     xx     x
+xxxxxxxxxxxxxxxxxxxxx
+       xxxxxxx
+       x     x
+       x  1  x
+       x     x
+       xxxxxxx
+       xxxxxxx
+       x     x
+       x  1  x
+       x     x
+       xxxxxxx
+Ok?$ 
+
+Here is the green dice:
+
+       xxxxxxx
+       x     x
+       x  0  x
+       x     x
+       xxxxxxx
+xxxxxxxxxxxxxxxxxxxxx
+x     xx     xx     x
+x  0  xx  4  xx  4  x
+x     xx     xx     x
+xxxxxxxxxxxxxxxxxxxxx
+       xxxxxxx
+       x     x
+       x  4  x
+       x     x
+       xxxxxxx
+       xxxxxxx
+       x     x
+       x  4  x
+       x     x
+       xxxxxxx
+Ok?$ 
+```
+
+# Round 3
+This round adds a new green die and changes their values, the new strategy becomes:
+
+| Computer | Player |
+| -------- | ------ |
+| green | red |
+| blue | green |
+| yellow | blue |
+| red | yellow |
+
+```console
+Time for fourth game!
+
+... No words ...  You are two lucky, altering rules!
+ - We are playing 4 new dices.
+ - Same rules as 2nd game...
+ - If you beat me one more time, I am going to give you my flag!
+```
+
+# Round 4
+The final round adds the same rules as round 2 but with the extra die:
+
+| Computer | Player |
+| -------- | ------ |
+| green | yellow |
+| blue | red |
+| yellow | blue |
+| red | yellow |
+
+And voila we are presented with our flag:
+```console
+DCTF{7537c933a266a45500c5bd35f20679539f596df9e706dc95fae22d15b812141f}
+```
+
