@@ -1,8 +1,9 @@
 # CTF-writeup-fair-dice
 This is my solution to the fair-dice challenge hosted by ENISA Hackfest 2020 16 - 17 November 2020.
 
+# Round 1
+
 ```console
-jsaw@jsaw:~$ nc 35.242.192.203 30769
 Welcome to a fair dice game.
  - We are going to play some fair rounds. Let's say 101.
  - We both throw one dice. The biggest numbered showed on the dice, wins!
@@ -87,7 +88,7 @@ Ok?
 I am chosing the red dice!
 What are you choosing? blue / yellow / red:
 ```
-# Round 1
+
 So for the first round we are presented with a simple dice game, using probibility math and some python we can quickly develop the best strategy:
 
 | Computer | Player |
@@ -95,6 +96,8 @@ So for the first round we are presented with a simple dice game, using probibili
 | blue | red |
 | yellow | blue |
 | red | blue |
+
+# Round 2
 
 ```console
 Time for second game!
@@ -106,14 +109,15 @@ You are two lucky, altering rules!
  - The biggest number wins.
 ```
 
-# Round 2
-In the second round the game and dice are the same except that each player roles them twice, this changes the strategy:
+In the second round the game and dice are the same except that each player rolls them twice, this changes the strategy:
 
 | Computer | Player |
 | -------- | ------ |
 | blue | yellow |
 | yellow | red |
 | red | blue |
+
+# Round 3
 
 ```console
 Time for third game!
@@ -221,7 +225,6 @@ xxxxxxxxxxxxxxxxxxxxx
 Ok?$ 
 ```
 
-# Round 3
 This round adds a new green die and changes their values, the new strategy becomes:
 
 | Computer | Player |
@@ -230,6 +233,8 @@ This round adds a new green die and changes their values, the new strategy becom
 | blue | green |
 | yellow | blue |
 | red | yellow |
+
+# Round 4
 
 ```console
 Time for fourth game!
@@ -240,7 +245,6 @@ Time for fourth game!
  - If you beat me one more time, I am going to give you my flag!
 ```
 
-# Round 4
 The final round adds the same rules as round 2 but with the extra die:
 
 | Computer | Player |
@@ -254,4 +258,7 @@ And voila we are presented with our flag:
 ```console
 DCTF{7537c933a266a45500c5bd35f20679539f596df9e706dc95fae22d15b812141f}
 ```
+
+run script.py to get the solution (as this is RNG based and I didn't do any checks, sometimes the player still loses using the best strategy and the script crashes due to EOFError)
+check probs.py to see how I figured out the best strategy
 
