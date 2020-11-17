@@ -2,7 +2,7 @@ from pwn import *
 
 def myStrat(color):
         if 'red' in color:
-                return 'blue\n'
+                return 'yellow\n'
         if 'yellow' in color:
                 return 'blue\n'
         if 'blue' in color:
