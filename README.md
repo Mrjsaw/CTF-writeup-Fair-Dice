@@ -5,6 +5,9 @@ This is my solution to the fair-dice challenge hosted by ENISA Hackfest 2020 16 
 
 <img src="https://imgur.com/TX8qhIe.png"></img>
 
+```console
+jsaw@jsaw:~/ctf/fair-dice$ nc 35.242.192.203 30769
+```
 # Round 1
 
 ```console
@@ -262,7 +265,7 @@ And voila we are presented with our flag:
 ```console
 DCTF{7537c933a266a45500c5bd35f20679539f596df9e706dc95fae22d15b812141f}
 ```
-
+Using some python and pwntools we can automate this:
 run script.py to get the solution (as this is RNG based and I didn't do any checks, sometimes the player still loses using the best strategy and the script crashes due to EOFError)
-check probs.py to see how I figured out the best strategy
+check probs.py to see how I figured out the best strategy and probabilities
 
