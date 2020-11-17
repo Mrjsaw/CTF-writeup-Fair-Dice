@@ -85,4 +85,13 @@ xxxxxxxxxxxxxxxxxxxxx
        xxxxxxx
 Ok?
 I am chosing the red dice!
-What are you choosing? blue / yellow / red:```
+What are you choosing? blue / yellow / red:
+```
+
+So for the first round we are presented with a simple dice game, using probibility math and some python we can quickly develop the best strategy:
+
+| Computer | Player |
+| -------- | ------ |
+| blue | red |
+| yellow | blue |
+| red | blue |
